@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/login"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="155dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+
+        />
+
+    <ImageView
+        android:layout_width="263dp"
+        android:layout_height="227dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="5dp"
+        android:padding="0dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/txtID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.03"
+        android:background="#a4acad"
+        android:backgroundTint="#c7e4e8"
+        android:drawableLeft="@drawable/shape_02"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Patient ID"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColorHint="#a4acad"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#a4acad" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.03"
+        android:backgroundTint="#c7e4e8"
+        android:background="#a4acad"
+        android:drawableLeft="@drawable/shape_03"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColorHint="#a4acad"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangle_3"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="login"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:onClick="login"
+        tools:ignore="OnClick" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
