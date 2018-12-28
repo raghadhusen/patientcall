@@ -59,13 +59,14 @@ public class DoctorActivity extends AppCompatActivity  {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:"+doctor_phone));
-                        if (ActivityCompat.checkSelfPermission(DoctorActivity.this,
-                                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                            return;
-                        }
-                        startActivity(callIntent);
+                        Intent intent = new Intent(DoctorActivity.this, CallActivity.class);
+                        intent.putExtra("ID", patientID);
+                        intent.putExtra("firstName", first_name);
+                        intent.putExtra("lastName", last_name);
+                        intent.putExtra("doctorPhone", doctor_phone);
+                        startActivity(intent);
+
+
                     }
                 }
         );

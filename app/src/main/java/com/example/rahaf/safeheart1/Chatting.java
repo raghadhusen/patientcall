@@ -17,12 +17,7 @@ public class Chatting extends AppCompatActivity {
         setContentView(R.layout.activity_chatting);
 
 
-        familyName = (TextView)findViewById(R.id.txtName);
-        if(getIntent().hasExtra("name"))
-        {
-            String name = getIntent().getStringExtra("name");
-            familyName.setText(name);
-        }
+
 
         String num = getIntent().getStringExtra("num");
         Intent callIntent = new Intent(Intent.ACTION_CALL);
